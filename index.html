@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bellisimo 🍦 Heladería</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="logo-icon">🍦</span>
+      <span class="brand-name">Bellisimo</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sabores">Sabores</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="ice-cream-art">
+        <div class="cone"></div>
+        <div class="scoop scoop-3"></div>
+        <div class="scoop scoop-2"></div>
+        <div class="scoop scoop-1"></div>
+        <div class="cherry">🍒</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-subtitle">¡Bienvenidos a</p>
+        <h1 class="hero-title">Bellisimo</h1>
+        <p class="hero-desc">El lugar donde cada cucharada es una experiencia de felicidad. Helados artesanales hechos con amor y los mejores ingredientes naturales.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Ver Menú</a>
+          <a href="#sabores" class="btn btn-outline">Nuestros Sabores</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#fff8f0"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature-card">
+      <span class="feature-icon">🌿</span>
+      <h3>100% Natural</h3>
+      <p>Ingredientes frescos y naturales en cada helado que preparamos con cariño.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">👨‍🍳</span>
+      <h3>Artesanal</h3>
+      <p>Recetas tradicionales elaboradas a mano por nuestros maestros heladeros.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">💎</span>
+      <h3>Calidad Premium</h3>
+      <p>Usamos la mejor leche, frutas de temporada y chocolate belga seleccionado.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">❤️</span>
+      <h3>Hecho con Amor</h3>
+      <p>Más de 10 años endulzando momentos especiales de familias y amigos.</p>
+    </div>
+  </section>
+
+  <!-- SABORES -->
+  <section class="section" id="sabores">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros Sabores</h2>
+        <p>Explora nuestra paleta de sabores únicos. Haz clic en uno para conocer más.</p>
+      </div>
+      <div class="flavors-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="fruta">Frutas</button>
+        <button class="filter-btn" data-filter="clasico">Clásicos</button>
+        <button class="filter-btn" data-filter="especial">Especiales</button>
+      </div>
+      <div class="flavors-grid" id="flavorsGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAVOR MODAL -->
+  <div class="modal-overlay" id="flavorModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalName"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </div>
+
+  <!-- MENÚ -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestro Menú</h2>
+        <p>Desde copas sencillas hasta sundaes increíbles — hay algo para todos.</p>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="copas">Copas</button>
+        <button class="tab-btn" data-tab="conos">Conos</button>
+        <button class="tab-btn" data-tab="sundaes">Sundaes</button>
+        <button class="tab-btn" data-tab="malteadas">Malteadas</button>
+      </div>
+      <div class="menu-content" id="menuContent">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="stats-section">
+    <div class="stat-item">
+      <span class="stat-number" data-target="10">0</span>
+      <span class="stat-plus">+</span>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="45">0</span>
+      <span class="stat-plus">+</span>
+      <p>Sabores únicos</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="20000">0</span>
+      <span class="stat-plus">+</span>
+      <p>Clientes felices</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="5">0</span>
+      <span class="stat-plus">+</span>
+      <p>Sucursales</p>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container about-container">
+      <div class="about-art">
+        <div class="about-deco-circle c1"></div>
+        <div class="about-deco-circle c2"></div>
+        <div class="about-deco-circle c3"></div>
+        <div class="about-emojis">
+          <span>🍓</span><span>🍫</span><span>🫐</span>
+          <span>🥭</span><span>🍋</span><span>🍵</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-header left-align">
+          <h2>Nuestra Historia</h2>
+        </div>
+        <p>Bellisimo nació en 2014 de un sueño familiar: compartir la alegría de un buen helado artesanal con toda la comunidad. Lo que empezó como un pequeño carrito de helados en el parque hoy es una heladería con 5 locales y miles de sonrisas diarias.</p>
+        <p>Cada sabor que ofrecemos lleva semanas de desarrollo, prueba y perfección. Creemos que un helado excepcional empieza con ingredientes excepcionales — por eso trabajamos directamente con agricultores locales y productores de cacao selecto.</p>
+        <div class="about-badges">
+          <span class="badge">🏆 Premio Mejor Heladería 2022</span>
+          <span class="badge">🌱 Ingredientes Locales</span>
+          <span class="badge">🐮 Libre de crueldad animal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- Generado por JS -->
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2>Visítanos</h2>
+        <p>Estamos esperándote con una sonrisa y el mejor helado del mundo.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Dirección Principal</h4>
+              <p>Av. Dulce 123, Centro Comercial El Paraíso</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <h4>Horario</h4>
+              <p>Lunes – Jueves: 11:00 – 21:00</p>
+              <p>Viernes – Domingo: 10:00 – 22:30</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+51 987 654 321</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>hola@bellisimo.com</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Escríbenos</h3>
+          <div class="form-group">
+            <input type="text" id="formName" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder="Tu correo electrónico" required />
+          </div>
+          <div class="form-group">
+            <select id="formSubject">
+              <option value="">Selecciona un tema</option>
+              <option>Pedidos especiales</option>
+              <option>Eventos y celebraciones</option>
+              <option>Franquicias</option>
+              <option>Sugerencias</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" placeholder="Tu mensaje..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Enviar Mensaje 🍦</button>
+          <div class="form-success" id="formSuccess">
+            ✅ ¡Mensaje enviado! Te contactaremos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-icon">🍦</span>
+        <span class="brand-name">Bellisimo</span>
+        <p>Endulzando tu día desde 2014</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sabores">Sabores</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li><a href="#">📸 Instagram</a></li>
+          <li><a href="#">📘 Facebook</a></li>
+          <li><a href="#">🎵 TikTok</a></li>
+          <li><a href="#">🐦 Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bellisimo Heladería. Todos los derechos reservados. Hecho con 🍦 y ❤️</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
